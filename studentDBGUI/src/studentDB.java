@@ -22,11 +22,23 @@ public class studentDB extends JFrame {
     private JButton clearAllRecordsButton;
     private JPanel degreeOptionsPane;
     private JPanel awardPrizesPane;
-    private JTextPane textPane1;
+    private JTextArea textArea1;
 
     public studentDB (String title) {
         super(title);
 
+        try {
+            for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (Exception e) {
+
+        }
+
+        textArea1.setLineWrap(true);
         mainPanel.setPreferredSize(new Dimension(800,450));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setContentPane(mainPanel);
