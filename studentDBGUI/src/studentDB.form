@@ -26,7 +26,7 @@
         <properties/>
         <border type="etched" title="Student Details"/>
         <children>
-          <component id="e46d6" class="javax.swing.JLabel">
+          <component id="e46d6" class="javax.swing.JLabel" binding="studentLabel">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -36,7 +36,7 @@
               <text value="Student Number"/>
             </properties>
           </component>
-          <component id="9e466" class="javax.swing.JLabel">
+          <component id="9e466" class="javax.swing.JLabel" binding="familyLabel">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -44,7 +44,7 @@
               <text value="Family Name"/>
             </properties>
           </component>
-          <component id="78eb2" class="javax.swing.JLabel">
+          <component id="78eb2" class="javax.swing.JLabel" binding="givenLabel">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -60,7 +60,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="262ba" class="javax.swing.JLabel">
+          <component id="262ba" class="javax.swing.JLabel" binding="degreeLabel">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -100,7 +100,7 @@
         <properties/>
         <border type="etched" title="Topic Details"/>
         <children>
-          <component id="d6e08" class="javax.swing.JLabel">
+          <component id="d6e08" class="javax.swing.JLabel" binding="topicLabel">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -116,7 +116,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="20bcf" class="javax.swing.JLabel">
+          <component id="20bcf" class="javax.swing.JLabel" binding="markLabel">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -132,7 +132,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="b1ac1" class="javax.swing.JLabel">
+          <component id="b1ac1" class="javax.swing.JLabel" binding="gradeLabel">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -183,7 +183,7 @@
         <properties/>
         <border type="etched" title="Degree Options"/>
         <children>
-          <component id="d5359" class="javax.swing.JLabel">
+          <component id="d5359" class="javax.swing.JLabel" binding="artsMaLabel">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -193,7 +193,7 @@
               <text value="Arts Major"/>
             </properties>
           </component>
-          <component id="c7514" class="javax.swing.JLabel">
+          <component id="c7514" class="javax.swing.JLabel" binding="artsMiLabel">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -201,7 +201,7 @@
               <text value="Arts Minor"/>
             </properties>
           </component>
-          <component id="39b5c" class="javax.swing.JLabel">
+          <component id="39b5c" class="javax.swing.JLabel" binding="medLabel">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -250,7 +250,7 @@
         <properties/>
         <border type="etched" title="Award Prizes"/>
         <children>
-          <component id="fca2" class="javax.swing.JLabel">
+          <component id="fca2" class="javax.swing.JLabel" binding="prizeLabel">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -266,7 +266,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="2659c" class="javax.swing.JLabel">
+          <component id="2659c" class="javax.swing.JLabel" binding="numberOfLabel">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -282,7 +282,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="9c804" class="javax.swing.JLabel">
+          <component id="9c804" class="javax.swing.JLabel" binding="templateLabel">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -290,7 +290,7 @@
               <text value="Template"/>
             </properties>
           </component>
-          <component id="12c7d" class="javax.swing.JButton" default-binding="true">
+          <component id="12c7d" class="javax.swing.JButton" binding="awardPrizeButton">
             <constraints>
               <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
