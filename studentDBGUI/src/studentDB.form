@@ -52,13 +52,15 @@
               <text value="Given Name(s)"/>
             </properties>
           </component>
-          <component id="42bb7" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+          <component id="42bb7" class="javax.swing.JTextField" binding="givenNaField">
             <constraints>
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <text value=""/>
+            </properties>
           </component>
           <component id="262ba" class="javax.swing.JLabel" binding="degreeLabel">
             <constraints>
@@ -68,23 +70,27 @@
               <text value="Degree"/>
             </properties>
           </component>
-          <component id="23a87" class="javax.swing.JTextField" default-binding="true">
+          <component id="23a87" class="javax.swing.JTextField" binding="familyNaField">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <text value=""/>
+            </properties>
           </component>
-          <component id="c252d" class="javax.swing.JTextField" default-binding="true">
+          <component id="c252d" class="javax.swing.JTextField" binding="studentNoField">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <text value=""/>
+            </properties>
           </component>
-          <component id="5b21b" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
+          <component id="5b21b" class="javax.swing.JComboBox" binding="degreeBox">
             <constraints>
               <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -108,13 +114,15 @@
               <text value="Topic Code"/>
             </properties>
           </component>
-          <component id="f4871" class="javax.swing.JTextField" default-binding="true">
+          <component id="f4871" class="javax.swing.JTextField" binding="topicCodeField">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <text value=""/>
+            </properties>
           </component>
           <component id="20bcf" class="javax.swing.JLabel" binding="markLabel">
             <constraints>
@@ -124,13 +132,15 @@
               <text value="Mark"/>
             </properties>
           </component>
-          <component id="1e7dc" class="javax.swing.JTextField" default-binding="true">
+          <component id="1e7dc" class="javax.swing.JTextField" binding="markField">
             <constraints>
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <text value=""/>
+            </properties>
           </component>
           <component id="b1ac1" class="javax.swing.JLabel" binding="gradeLabel">
             <constraints>
@@ -140,11 +150,13 @@
               <text value="Grade"/>
             </properties>
           </component>
-          <component id="59b85" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+          <component id="59b85" class="javax.swing.JComboBox" binding="gradeBox">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties/>
+            <properties>
+              <model/>
+            </properties>
           </component>
           <component id="adcb" class="javax.swing.JButton" binding="addTopicResultButton" default-binding="true">
             <constraints>
@@ -209,21 +221,25 @@
               <text value="Medicine Prizes"/>
             </properties>
           </component>
-          <component id="2a4cd" class="javax.swing.JTextField" default-binding="true">
+          <component id="2a4cd" class="javax.swing.JTextField" binding="artsMinorField">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <text value=""/>
+            </properties>
           </component>
-          <component id="e7d30" class="javax.swing.JTextField" default-binding="true">
+          <component id="e7d30" class="javax.swing.JTextField" binding="artsMajorField">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <text value=""/>
+            </properties>
           </component>
           <scrollpane id="9084c">
             <constraints>
@@ -234,9 +250,11 @@
             </properties>
             <border type="none"/>
             <children>
-              <component id="3473a" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+              <component id="3473a" class="javax.swing.JTextArea" binding="medPrizeField">
                 <constraints/>
-                <properties/>
+                <properties>
+                  <text value=""/>
+                </properties>
               </component>
             </children>
           </scrollpane>
@@ -258,7 +276,7 @@
               <text value="Prize Name"/>
             </properties>
           </component>
-          <component id="3f18a" class="javax.swing.JTextField" default-binding="true">
+          <component id="3f18a" class="javax.swing.JTextField" binding="prizeField">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
@@ -274,13 +292,15 @@
               <text value="Number of Topics"/>
             </properties>
           </component>
-          <component id="af48d" class="javax.swing.JTextField" default-binding="true">
+          <component id="af48d" class="javax.swing.JTextField" binding="noTopicsField">
             <constraints>
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <text value=""/>
+            </properties>
           </component>
           <component id="9c804" class="javax.swing.JLabel" binding="templateLabel">
             <constraints>
@@ -298,13 +318,15 @@
               <text value="Award Prize"/>
             </properties>
           </component>
-          <component id="e33b0" class="javax.swing.JTextField" default-binding="true">
+          <component id="e33b0" class="javax.swing.JTextField" binding="templateField">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <text value=""/>
+            </properties>
           </component>
         </children>
       </grid>
