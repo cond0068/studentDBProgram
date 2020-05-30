@@ -1,7 +1,7 @@
+import studentdatabase.StudentDatabase;
+
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.awt.Event.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -11,18 +11,18 @@ public class studentDB extends JFrame {
     private JPanel studentDetailsPanel;
     private JPanel topicDetailsPanel;
     private JPanel spacePanel;
-    private JTextField textField1;
-    private JComboBox comboBox1;
+    private JTextField givenNaField;
+    private JComboBox gradeBox;
     private JButton addTopicResultButton;
     private JButton findTopicResultButton;
-    private JComboBox comboBox2;
+    private JComboBox degreeBox;
     private JButton addStudentButton;
     private JButton findStudentButton;
     private JButton printAllRecordsButton;
     private JButton clearAllRecordsButton;
     private JPanel degreeOptionsPane;
     private JPanel awardPrizesPane;
-    private JTextArea textArea1;
+    private JTextArea medPrizeField;
     private JLabel studentLabel;
     private JLabel familyLabel;
     private JLabel givenLabel;
@@ -37,6 +37,15 @@ public class studentDB extends JFrame {
     private JLabel templateLabel;
     private JLabel numberOfLabel;
     private JButton awardPrizeButton;
+    private JTextField prizeField;
+    private JTextField templateField;
+    private JTextField noTopicsField;
+    private JTextField artsMinorField;
+    private JTextField artsMajorField;
+    private JTextField studentNoField;
+    private JTextField familyNaField;
+    private JTextField topicCodeField;
+    private JTextField markField;
 
     public studentDB (String title) {
         super(title);
@@ -52,16 +61,16 @@ public class studentDB extends JFrame {
 
         }
 
-        comboBox1.setFont(new Font("", Font.PLAIN, 12));
-        comboBox1.addItem("P");
-        comboBox1.addItem("CR");
-        comboBox1.addItem("DN");
-        comboBox1.addItem("HD");
+        gradeBox.setFont(new Font("", Font.PLAIN, 12));
+        gradeBox.addItem("P");
+        gradeBox.addItem("CR");
+        gradeBox.addItem("DN");
+        gradeBox.addItem("HD");
 
-        comboBox2.setFont(new Font("", Font.PLAIN, 12));
-        comboBox2.addItem("Arts");
-        comboBox2.addItem("Medicine");
-        comboBox2.addItem("Science");
+        degreeBox.setFont(new Font("", Font.PLAIN, 12));
+        degreeBox.addItem("Arts");
+        degreeBox.addItem("Medicine");
+        degreeBox.addItem("Science");
 
         headerLabel.setFont(new Font("", Font.BOLD, 20));
         studentLabel.setFont(new Font("", Font.PLAIN, 12));
@@ -93,15 +102,34 @@ public class studentDB extends JFrame {
         addTopicResultButton.setFocusPainted(false);
         findTopicResultButton.setFocusPainted(false);
 
-        textArea1.setLineWrap(true);
+        medPrizeField.setLineWrap(true);
         mainPanel.setPreferredSize(new Dimension(700,450));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setContentPane(mainPanel);
         this.pack();
 
+        printAllRecordsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                StudentDatabase studentDB = new StudentDatabase();
+                studentDB.printRecords();
 
-
-
+            }
+        });
+        clearAllRecordsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                StudentDatabase studentDB = new StudentDatabase();
+                studentDB.clearRecords();
+            }
+        });
+        awardPrizeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                StudentDatabase studentDB = new StudentDatabase();
+                studentDB.awardPrize(prizeField.getText(),templateField.getText(),noTopicsField.getText());
+            }
+        });
     }
 
     public static void main (String[] args) {
@@ -134,5 +162,3 @@ public class studentDB extends JFrame {
         // TODO: place custom component creation code here
     }
 }
-
-
